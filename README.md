@@ -16,12 +16,12 @@ var mp = new mintParallax("#demo");
 
 ```html
 <div id="demo"
-     data-x-range="true"   /* optional, number */
-     data-y-range="true"   /* optional, number */
-     data-invert-x="false" /* optional, boolean */
+     data-x-range="50"   /* optional, number */
+     data-y-range="100"   /* optional, number */
+     data-invert-x="true" /* optional, boolean */
      data-invert-y="false" /* optional, boolean */
 >
-    <img src="fragment1.png" data-depth="0.0" /* required, 0.0 ~ 1.0 */ >
+    <img src="fragment1.png" data-depth="0.0" /* required, 0.0~1.0 */ >
     <img src="fragment2.png" data-depth="0.2">
     <img src="fragment3.png" data-depth="0.4">
     <img src="fragment4.png" data-depth="0.6">
