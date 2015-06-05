@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>mintParallax</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<style>
+	body {
+		margin: 0;
+		text-align: center;
+		background: #EEE;
+	}
+	#demo {
+		width: 90%;
+		height: 500px;
+		position: relative;
+		margin: 50px auto;
+		background: #fff;
+		box-shadow: 0 0 0 5px red;
+	}
+	h1 {
+		padding-top: 200px;
+	}
+	.fork {
+		display: inline-block;
+	}
+	.sprite { background: url(sprite.png) no-repeat;position: absolute;}
+	.i-f1   { background-position:0 -154px;width: 12px;height: 15px;left: 0;top: 15%; }
+	.i-f2   { background-position:-12px -334px;width: 112px;height: 104px;left: 1%;top: 63%; }
+	.i-f3   { background-position:-124px -55px;width: 33px;height: 39px;left: 10%;top: 5%; }
+	.i-f4   { background-position:-198px 0px;width: 19px;height: 21px;left: 20%;top: 0; }
+	.i-f5   { background-position:-237px -321px;width: 23px;height: 27px;left: 23%;top: 21%; }
+	.i-f6   { background-position:-460px -35px;width: 31px;height: 44px;left: 26%;top: 45%; }
+	.i-f7   { background-position:-912px -10px;width: 33px;height: 50px;left: 91%;top: 1%; }
+	.i-f8   { background-position:-953px -94px;width: 29px;height: 34px;left: 95%;top: 67%; }
+	.i-f9   { background-position:-1046px -98px;width: 14px;height: 17px;left: 100%;top: 89%; }
+	.i-f10  { background-position:-982px -255px;width: 20px;height: 17px;left: 80%;top: 73%; }
+	.i-f11  { background-position:-1039px -218px;width: 91px;height: 71px;left: 70%;top: 28%; }
+	.i-f12  { background-position:-927px -385px;width: 18px;height: 16px;left: 60%;top: 91%; }
+	</style>
+</head>
+<body>
+	<div id="demo">
+		<h1 data-depth="0.3">mintParallax</h1>
+		<a data-depth="0.2" href="https://github.com/Cople/mintParallax" class="fork">Fork me on GitHub</a>
+		<p data-depth="0.1">
+			<button id="disable">Disable</button>
+			<button id="enable">Enable</button>
+		</p>
+
+	    <p class="sprite i-f1"  data-depth="0.2"></p>
+	    <p class="sprite i-f2"  data-depth="1.0"></p>
+	    <p class="sprite i-f3"  data-depth="0.5"></p>
+	    <p class="sprite i-f4"  data-depth="0.3"></p>
+	    <p class="sprite i-f5"  data-depth="0.3"></p>
+	    <p class="sprite i-f6"  data-depth="0.6"></p>
+	    <p class="sprite i-f7"  data-depth="0.8"></p>
+	    <p class="sprite i-f8"  data-depth="0.7"></p>
+	    <p class="sprite i-f9"  data-depth="0.2"></p>
+	    <p class="sprite i-f10" data-depth="0.1"></p>
+	    <p class="sprite i-f11" data-depth="0.9"></p>
+	    <p class="sprite i-f12" data-depth="0.4"></p>
+	</div>
+
+<script src="mintParallax.js"></script>
+<script>
+var mp = new mintParallax("#demo");
+document.getElementById("disable").onclick = function() {
+    mp.disable();
+};
+document.getElementById("enable").onclick = function() {
+    mp.enable();
+};
+</script>
+</body>
+</html>
