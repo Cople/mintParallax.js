@@ -1,10 +1,10 @@
-# mintParallax
+# mintParallax.js
 视差效果组件，通过陀螺仪或光标位置实现。
 
 ### Demo
 
-![Demo](http://chart.apis.google.com/chart?cht=qr&chs=200x200&chl=http%3A//cople.github.io/mintParallax/&chld=H|0)
-[Demo](http://cople.github.io/mintParallax/)
+![Demo](http://chart.apis.google.com/chart?cht=qr&chs=200x200&chl=http%3A//cople.github.io/mintParallax.js/&chld=H|0)
+[Demo](http://cople.github.io/mintParallax.js/)
 
 ### Usage
 
